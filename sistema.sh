@@ -7,5 +7,6 @@ date
 
 echo "Uso do disco:"
 df
+
 echo "Usuários conectados:"
 w

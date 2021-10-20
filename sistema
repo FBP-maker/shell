@@ -1,0 +1,11 @@
+#!/bin/bash
+# sistema - sript que mostra informções sobre o sistema
+# Autor: Fulano da Silva
+
+echo "Data e Horário:"
+date
+
+echo "Uso do disco:"
+df
+echo "Usuários conectados:"
+w

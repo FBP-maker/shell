@@ -12,11 +12,6 @@ echo "com expanção da variável $SHELL"
 
 echo "olá tudo bem \"outro texto\""
 
-echo "\$SHELL"
-
 #sem caracter de escape
 
 echo "olá tudo bem "outro texto""
-
-echo "$SHELL"
-

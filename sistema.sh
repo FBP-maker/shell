@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # sistema - script que mostra informações sobre o sistema
 # Autor: Fulando da Silva
 

@@ -13,6 +13,8 @@ echo -e "Identifique dispositivo que receberá a imagem: \n  $(fdisk -l)"
 
 read -p "Indique o caminho do dispositivo:" PENDRIVE
 
+clear
+
 mkfs.vfat -I $PENDRIVE
 
 read -p "Forneça o caminho da ISO:" ISO

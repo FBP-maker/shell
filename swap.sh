@@ -18,5 +18,5 @@ swapon /swapfile
 
 swapon -s
 
-#Para tornar permanentemente ativo o arquivo de swap acresça uma refêrencia ao mesmo no fim do arquivo # nano /etc/fstab:
- #/swapfile     none          swap     sw      0     0
+#Para tornar permanentemente ativo o arquivo de swap será acrescentado uma refêrencia no fim do arquivo /etc/fstab:
+ echo '/swapfile     none          swap     sw      0     0' >> /etc/fstab

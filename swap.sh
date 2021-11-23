@@ -1,4 +1,4 @@
-
+#!/usr/bin/env bash
 
 #Testa se o usuário é root
 [[ "$UID" -ne "0" ]] && { echo "Necessita de root" ; exit1 ;}

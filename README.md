@@ -1,2 +1,2 @@
 # shell
-Meus scripts de estudo de SHELL LINUX.
+Meus scripts de estudo SHELL LINUX.

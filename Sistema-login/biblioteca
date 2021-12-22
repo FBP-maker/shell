@@ -1,0 +1,8 @@
+#biblioteca de login_senha
+
+function _help(){
+			echo \
+		"Opções Disponiveis:
+		-l, --login (Abre programa com menu!)
+		-h, --help (Abre esta opção de ajuda..)"
+}

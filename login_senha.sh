@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 
-# Váriaveis do Programa==================================#
-user="filipe"
-password="9490"
+#Chamada Configuração=====================================#
+source ./Sistema-login/login_senha.conf
+source ./Sistema-login/biblioteca #chamada função externa
 
-#Chamada em linha========================================#
-
-case $1 in
-	-l|--login)
-	read -p "Loin: " _login
+#FUNÇÕES=================================================#
+function _login(){
+		read -p "Login: " _login
 	read -t 5 -sp "Password: " _pass
 	if [[ "$_login" = "filipe" ]] && [[ "$_pass" -eq "$password" ]]; then
 		echo -e "\nUsuário correto"
@@ -18,7 +16,7 @@ case $1 in
 		echo "Login ou Passowrd Inválidos"
 		exit 1
 	fi
-
+	#menu
 	echo \
 	"===Bem vindo $user===
 	1) Abrir Editor mousepad 
@@ -40,15 +38,19 @@ case $1 in
 		4) exit 0 ;;
 		*) echo "Opção inexistente!"
 	esac
+#fecha bloco -l , --login
+}
 
-	;; #fecha bloco -l , --login
+#Chamada em linha========================================#
 
+case $1 in
+	-l|--login)
+			_login #chamando função
+	 ;;
+	
 	-h|--help)
-		echo \
-		"Opções Disponiveis:
-		-l, --login (Abre programa com menu!)
-		-h, --help (Abre esta opção de ajuda..)"
-	;;
+			_help #Chamando função		
+     ;;
 	
 	*) echo "Use a opção -h, --help para ajuda!" 
 

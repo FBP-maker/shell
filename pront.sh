@@ -7,4 +7,4 @@ echo \
 set number 
 set mouse=r 
 syntax on 
-" >> /.vimrc
+" >> ~/.vimrc

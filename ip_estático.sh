@@ -10,11 +10,16 @@ read -p "NETMASK: " MASCARA
 
 read -p "GATEWAY: " GATEWAY
 
-echo "
-DEVICE=$(interface)
-IPADDR=$(IP)
-NETMASK=$(MASCARA)
-GATEWAY=$(GATEWAY)
-ONBOOT=yes" >> /etc/syconfig/network-scripts/ifcfg-$(interface)
+echo " \
+DEVICE=($interface)
+IPADDR=($IP)
+NETMASK=($MASCARA)
+GATEWAY=($GATEWAY)
+ONBOOT=yes
+" >> /etc/syconfig/network-scripts/ifcfg-$interface
+
+echo 'Reiniciando serviço...'
+
+sleep 3s
 
 service network restart
